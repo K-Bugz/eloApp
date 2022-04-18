@@ -8,7 +8,7 @@ const sequelize = require("../config/connection"); // connection to db different
 
 // SeedALL function
 const seedAll = async () => {
-    await sequelize.sync({ force: true });
+    await sequelize.sync({ force: false });
     console.log('--------------');
     await seedOrganizations();
     console.log('--------------');
