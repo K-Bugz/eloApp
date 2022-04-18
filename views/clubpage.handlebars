@@ -1,0 +1,115 @@
+<body class="bg-[#272522]">
+    {{!--
+    <!-- Main Section --> --}}
+    <main class="min-h-screen min-w-screen flex flex-col gap-y-8">
+
+        <section
+            class="profile-picture flex flex-col flex-wrap flex-grow justify-start items-center mt-12 bg-[#272522] ">
+            {{!--
+            <!-- Club image and button --> --}}
+            <div class=""><i class="fa-solid fa-user fa-7x text-[#00BA4B]"></i>
+                <button>
+                    <a href="club-member-manager.html"><i class="fa-solid fa-gear text-[#00BA4B]"></i></a>
+                </button>
+            </div>
+
+            {{!--
+            <!-- Club Name and Email --> --}}
+            <div class="flex flex-col mt-4 items-center">
+                <div id="club-name">
+                    {{organization.name}}
+                </div>
+                <div id="club-email">
+                    Club@gmail.com
+                </div>
+            </div>
+
+        </section>
+
+        {{!--
+        <!-- Rank Section --> --}}
+        <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] ">
+            {{!--
+            <!-- Ranking Image --> --}}
+            <div class="flex flex-col items-center">
+                <a href=""><i class="fa-solid fa-certificate fa-4x text-[#00BA4B]"></i></a>
+                <h2 class="self-center mt-2 underline font-bold text-[#00BA4B]">Club Ranking</h2>
+
+                {{!--
+                <!-- 5000 is a placeholder --> --}}
+                <h3 class="self-center text-[#593EFD]" id="ranking">5,000</h3>
+            </div>
+        </section>
+
+        {{!--
+        <!-- Elo Section --> --}}
+        <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] ">
+            {{!--
+            <!-- Elo Image --> --}}
+            <div class="flex flex-col items-center">
+                <a href=""><i class="fa-solid fa-certificate fa-4x text-[#00BA4B]"></i></a>
+                <h2 class="self-center mt-2 underline font-bold text-[#00BA4B]">Club Elo</h2>
+
+                {{!--
+                <!-- 5000 is a placeholder --> --}}
+                <h3 class="self-center text-[#593EFD]" id="ranking">5,000</h3>
+            </div>
+        </section>
+
+        
+        {{#if usersWithOrg.length}}
+        <section class="justify-center flex flex-wrap flex-grow">
+            <div class="flex flex-col items-center">
+                <h2 class="self-center mt-2 underline font-bold text-[#00BA4B]">Your Members</h2>
+                <div class="justify-center align-center">
+                    <ol>
+                        {{#each usersWithOrg as |member|}}
+                        <li>
+                            {{!-- edit link to firends page --}}
+                            <button class="text-white bg-[#00BA4B] hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 font-medium rounded-full px-5 py-2.5">
+                                <a href="/user/{{usersWithOrg.id}}" class="chessMember"></a>
+                                <h3>{{member.username}} [ Elo: {{member.elo}} ]</h3>
+                            </button>
+                        </li>
+                        {{/each}}
+                    </ol>
+                </div>
+            </div>
+        </section>
+        
+        {{!-- <!-- Share Section --> --}}
+        <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] "> 
+            {{!-- <!-- Share Image --> --}}
+            <div class="flex flex-col">
+                <form>
+                    <label>Choose a Winner:</label>
+                    <select id="winner" name="winner" class="text-black">
+                        {{#each usersWithOrg as |member|}}
+                        <option class="text-black">{{member.username}}</option>
+                        {{/each}}
+                    </select>
+                    <input type="submit" class="fa-solid fa-arrow-up-from-bracket fa-2x text-[#00BA4B]">
+                </form>
+            </div>  
+        </section>
+
+        <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] "> 
+            {{!-- <!-- Share Image --> --}}
+            <div class="flex flex-col">
+                <form>
+                    <label>Choose a Loser:</label>
+                    <select id="winner" name="winner" class="text-black">
+                        {{#each usersWithOrg as |member|}}
+                        <option class="text-black">{{member.username}}</option>
+                        {{/each}}
+                    </select>
+                    <input type="submit" class="fa-solid fa-arrow-up-from-bracket fa-2x text-[#00BA4B]">
+                </form>
+            </div>  
+        </section>
+        {{/if}}
+
+        {{> navbar }}
+
+    </main>
+</body>

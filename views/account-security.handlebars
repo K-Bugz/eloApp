@@ -1,0 +1,41 @@
+<body class="bg-[#272522]">
+
+    {{!-- <!-- Main Section --> --}}
+    <main class="min-h-screen min-w-screen flex flex-col gap-y-8">
+    
+
+        {{!-- <!-- Back button --> --}}
+        <div class="mt-4 ml-4">
+            <button class="text-white bg-[#00BA4B] hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 font-medium rounded-full px-5 py-2.5">
+                <a href="user-profile.html">
+                    <h2>Back</h2>
+                </a>
+            </button>
+        </div>
+            
+
+        <section class="profile-picture flex flex-col flex-wrap flex-grow items-center justify-center mt-8 bg-[#161719]"> 
+            <h1 class="text-4xl mt-12 underline text-center text-[#00BA4B]">Account Security</h1>
+
+                
+            <div class="flex flex-col">
+                <i class="my-8 mt-24 fa-solid fa-envelope text-[#00BA4B]">{{user.email}}</i>
+                <button>
+                    <h2 class="self-center text-[#00BA4B]">Change Email</h2>
+                </button>
+            </div>
+
+            <div class="flex flex-col">
+                <i class="my-8 mt-12 mb-8 fa-solid fa-lock text-[#00BA4B]">{{user.password}}</i>
+                <button>
+                    <h2 class="self-center text-[#00BA4B]">Change Password</h2>
+                </button>
+            </div>
+
+        </section>
+
+        {{> navbar }}
+
+    </main>
+</body>
+

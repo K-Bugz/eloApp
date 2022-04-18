@@ -1,0 +1,58 @@
+<body class="bg-[#272522]">
+
+    {{!-- Main Section --}}
+    <main class="min-h-screen min-w-screen flex flex-col gap-y-8">
+
+        {{!-- User Section --}}
+        <section class="profile-picture flex flex-wrap flex-grow justify-center mt-12 bg-[#272522] ">
+            {{!-- User image --}}
+            <div class="flex flex-col">
+                <a href=""><i class="fa-solid fa-user fa-6x text-[#00BA4B]"></i></a>
+                <h2 class="self-center mt-2 underline font-bold text-[#00BA4B]">{{user.username}}</h2>
+            </div>
+        </section>
+
+        {{!--
+        <!-- Rank Section --> --}}
+        <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] ">
+            {{!--
+            <!-- Ranking Image --> --}}
+            <div class="flex flex-col">
+                <a href=""><i class="fa-solid fa-certificate fa-4x text-[#00BA4B]"></i></a>
+                <h2 class="self-center mt-2 underline font-bold text-[#00BA4B]">Wins</h2>
+                {{!--
+                <!-- 5000 is a placeholder --> --}}
+                <h3 class="self-center text-[#593EFD]" id="ranking">{{user.wins}}</h3>
+            </div>
+        </section>
+
+        {{!--
+        <!-- Elo Section --> --}}
+        <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] ">
+            {{!--
+            <!-- Elo Image --> --}}
+            <div class="flex flex-col">
+                <a href=""><i class="fa-solid fa-certificate fa-4x text-[#00BA4B]"></i></a>
+                <h2 class="self-center mt-2 underline font-bold text-[#00BA4B]">Elo</h2>
+                {{!--
+                <!-- 5000 is a placeholder --> --}}
+                <h3 class="self-center text-[#593EFD]" id="ranking">{{user.elo}}</h3>
+            </div>
+        </section>
+
+        {{!--
+        <!-- Share Section --> --}}
+        <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] ">
+            {{!--
+            <!-- Share Image --> --}}
+            <div class="flex flex-col">
+                <button><a href="/share-profile"><i class="fa-solid fa-arrow-up-from-bracket fa-2x text-[#00BA4B]"></i></a>
+                    <h2 class="self-center mt-2 text-[#00BA4B]">Share</h2>
+                </button>
+            </div>
+        </section>
+
+        {{> navbar }}
+
+    </main>
+</body>

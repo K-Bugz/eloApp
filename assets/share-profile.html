@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind cdn jit link -->
+    <script src="https://cdn-tailwindcss.vercel.app/?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- tailwind js link -->
+    <script src="./tailwind.config.js"></script>
+    <!-- font awesome link --> 
+    <script src="https://kit.fontawesome.com/7733a9cf21.js" crossorigin="anonymous"></script>
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&amp;family=Poppins:wght@100;200;300;400&amp;display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./public/assets/css/styles.css"/>
+
+    <style type="text/tailwindcss">
+
+
+      .navbar {
+        @apply flex justify-around bg-[#272522] text-center text-4xl;
+      }
+
+      
+      .nav-btn {
+        @apply w-16 h-16 rounded-full;
+      }
+
+      
+    </style>
+
+    <title></title>
+  </head>
+
+  <body class="bg-[#272522]">
+
+    <!-- Main Section -->
+    <main class="min-h-screen min-w-screen flex flex-col gap-y-8">
+ 
+  
+      <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522]"> 
+        <!-- Elo Image -->
+        <div class="flex flex-col items-center gap-9 m-4">
+          <!-- Home Page Image -->
+          <h3 class="text-xl font-small text-3xl text-[#00BA4B] dark:text-white">Your QR Code</h3>
+          <div class="Chess-icon">
+            <a href=""><i class="fa-solid fa-qrcode fa-10x text-[#00BA4B]"></i></a>  
+          </div> 
+      </section>
+
+      <!-- Share Section -->
+      <section class="profile-picture flex flex-col flex-wrap flex-grow justify-center bg-[#161719]"> 
+        <h1 class="text-5xl text-center mb-12 underline text-[#00BA4B]">Share Profile</h1>
+            <p class="text-lg text-center mb-12">https://www.chessinfo.com/JohnDoe</p>
+
+             <!-- Share Image -->
+            <button><a href=""><i class="fa-solid fa-arrow-up-from-bracket fa-4x text-[#00BA4B]"></i></a>
+              <h2 class="self-center mt-2 text-[#00BA4B]">Share</h2>
+            </button> 
+      </section>
+
+
+      <!-- Navigation Section -->
+      <nav class="navbar nav-lg">
+
+        <button class="nav-btn btn-hover">
+          <a href="rankings-indavidual.html"><i class="fas fa-chart-bar"></i></a>
+        </button>
+
+        <button class="nav-btn btn-hover">
+          <a href="homepage.html"><i class="fa-solid fa-house-chimney"></i></a>          
+        </button>
+
+        <button class="nav-btn btn-hover">
+          <a href="clubpage.html"><i class="fas fa-chess"></i></a>             
+        </button>
+
+        <button class="nav-btn btn-hover">
+          <a href="user-profile.html"><i class="fas fa-user"></i></a>            
+        </button>
+      </nav>
+
+    </main>
+  </body>
+</html>

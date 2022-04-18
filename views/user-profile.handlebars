@@ -1,0 +1,69 @@
+<body class="bg-[#272522]">
+    {{!-- <!-- Main Section --> --}}
+    <main class="min-h-screen min-w-screen flex flex-col gap-y-8">
+        {{!-- <!-- Profile Image Section --> --}}
+        <section class="profile-picture flex flex-col flex-wrap flex-grow justify-start items-center mt-12 bg-[#272522] "> 
+            {{!-- <!-- User image and button --> --}}
+            <div class=""><i class="fa-solid fa-user fa-9x text-[#00BA4B]"></i>
+                <button>
+                    <i class="fa-solid fa-circle-plus text-[#00BA4B]"></i>
+                </button>
+            </div> 
+                    
+            {{!-- <!-- UserName and Email --> --}}
+            <div class="flex flex-col mt-4 items-center">
+                <div id="user-name">
+                    {{user.username}}
+                </div>
+                <div id="user-email">
+                    {{user.email}}
+                </div>
+            </div>
+        </section>
+            
+
+        {{!-- <!-- Options Section --> --}}
+        <section class="flex justify-around flex-col flex-wrap flex-grow justify-start items-center bg-[#161719] rounded-lg"> 
+            <div class="flex my-4 flex-col items-center">
+                <h5 class="flex text-xs mb-2 underline">Account Settings</h5>
+                <button class="flex">
+                    <a href="/account-security">
+                        <p class="text-[#00BA4B]">
+                            Account Security
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </p>
+                    </a>
+                </button>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <h5 class="flex text-xs mb-2 underline">Support</h5>
+                <button class="">
+                    <a href="/about">
+                        <p class="text-[#00BA4B]">
+                            About Chess Stats
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </p>
+                    </a>
+                </button>
+                <button class="my-2">
+                    <p class="text-[#00BA4B]">
+                        Frequently Asked Questions
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </p>
+                </button>
+                <button class="">
+                    <a href="/share-profile">
+                        <p class="text-[#00BA4B]">
+                            Share Profile
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </p>
+                    </a>
+                </button>
+            </div>
+        </section>
+
+        {{> navbar }}
+
+    </main>
+</body>

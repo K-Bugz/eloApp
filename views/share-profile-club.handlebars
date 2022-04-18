@@ -1,0 +1,31 @@
+<body class="bg-[#272522]">
+    {{!-- <!-- Main Section --> --}}
+    <main class="min-h-screen min-w-screen flex flex-col gap-y-8">
+    
+    
+        <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522]"> 
+            {{!-- <!-- Elo Image --> --}}
+            <div class="flex flex-col items-center gap-9 m-4">
+                {{!-- <!-- Home Page Image --> --}}
+                <h3 class="text-xl font-small text-3xl text-[#00BA4B] dark:text-white">Your QR Code</h3>
+                <div class="Chess-icon">
+                    <a href=""><i class="fa-solid fa-qrcode fa-10x text-[#00BA4B]"></i></a>  
+                </div> 
+            </div>
+        </section>
+
+        {{!-- <!-- Share Section --> --}}
+        <section class="profile-picture flex flex-col flex-wrap flex-grow justify-center bg-[#161719]"> 
+            <h1 class="text-4xl text-center mb-12 underline text-[#00BA4B]">Share Club Profile</h1>
+            <p class="text-lg text-center mb-12">https://www.chessinfo.com/Club</p>
+
+            {{!-- <!-- Share Image --> --}}
+            <button><a href=""><i class="fa-solid fa-arrow-up-from-bracket fa-4x text-[#00BA4B]"></i></a>
+                <h2 class="self-center mt-2 text-[#00BA4B]">Share</h2>
+            </button> 
+        </section>
+
+        {{> navbar }}
+        
+    </main>
+</body>

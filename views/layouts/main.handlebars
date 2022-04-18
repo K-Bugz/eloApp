@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- tailwind cdn jit link -->
+    <script src="https://cdn-tailwindcss.vercel.app/?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- tailwind js link -->
+    {{!--
+    <script src="../../utils/tailwind.config.js"></script> --}}
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/7733a9cf21.js" crossorigin="anonymous"></script>
+    <!-- google fonts link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&amp;family=Poppins:wght@100;200;300;400&amp;display=swap"
+        rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        .navbar {
+                @apply flex justify-around bg-[#272522] text-center text-4xl;
+            }
+            
+            .nav-btn {
+                @apply w-16 h-16 rounded-full;
+            }
+        
+        </style>
+    <title>King Chess Ranking</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="chessHeader">
+                <a href="/">King Chess Ranking</a>
+            </h1>
+            <nav class="row">
+
+                {{!-- Basically if logged in show these two buttons else login --}}
+                {{#if loggedIn}}
+                <a class="col" href="/clubpage">Your Chess Club</a>
+                <button id="logout" class="btn-no-style">Logout</button>
+                {{else}}
+                <a class="col" href="/login">Login</a>
+                {{/if}}
+
+                {{!-- {{#if loggedIn}}
+                <button id="logout" class="btn-no-style"></button>
+                <a href="/homepage">Logout</a>
+                {{else}}
+                <button id="login" class="btn-no-style">
+                    <a href="/login">Login</a>
+                </button>
+                {{/if}} --}}
+            </nav>
+        </header>
+        <main>
+            {{{ body }}}
+        </main>
+        <footer>
+            Thanks for visiting!
+        </footer>
+    </div>
+    <script src="/js/login.js"></script>
+    <script src="/js/logout.js"></script>
+</body>
+
+</html>

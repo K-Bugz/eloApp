@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind cdn jit link -->
+    <script src="https://cdn-tailwindcss.vercel.app/?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- tailwind js link -->
+    <script src="./tailwind.config.js"></script>
+    <!-- font awesome link --> 
+    <script src="https://kit.fontawesome.com/7733a9cf21.js" crossorigin="anonymous"></script>
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&amp;family=Poppins:wght@100;200;300;400&amp;display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./public/assets/css/styles.css"/>
+
+    <style type="text/tailwindcss">
+
+
+      .navbar {
+        @apply flex justify-around bg-[#272522] text-center text-4xl;
+      }
+
+      
+      .nav-btn {
+        @apply w-16 h-16 rounded-full;
+      }
+
+      
+    </style>
+
+    <title></title>
+  </head>
+
+  <body class="bg-[#272522]">
+
+    <!-- Main Section -->
+    <main class="min-h-screen min-w-screen flex flex-col gap-y-8">
+ 
+      <section class="profile-picture flex flex-col flex-wrap flex-grow justify-start items-center mt-12 bg-[#272522] "> 
+        <!-- Club image and button -->
+          <div class=""><i class="fa-solid fa-user fa-7x text-[#00BA4B]"></i>
+            <button>
+              <a href="club-members-manage.html"><i class="fa-solid fa-gear text-[#00BA4B]"></i></a>
+            </button>
+          </div> 
+          
+          <!-- Club Name and Email -->
+          <div class="flex flex-col mt-4 items-center">
+            <div id="club-name">
+              Club 1
+            </div>
+            <div id="club-email">
+              Club@gmail.com
+            </div>
+          </div>
+          
+    </section>
+      
+      <!-- Rank Section -->
+      <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] "> 
+        <!-- Ranking Image -->
+        <div class="flex flex-col items-center">
+          <a href=""><i class="fa-solid fa-certificate fa-4x text-[#00BA4B]"></i></a>
+          <h2 class="self-center mt-2 underline font-bold text-[#00BA4B]">Club Ranking</h2>
+
+          <!-- 5000 is a placeholder -->
+          <h3 class="self-center text-[#593EFD]" id="ranking">5,000</h3>
+        </div>  
+      </section>
+
+      <!-- Elo Section -->
+      <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] "> 
+        <!-- Elo Image -->
+        <div class="flex flex-col items-center">
+          <a href=""><i class="fa-solid fa-certificate fa-4x text-[#00BA4B]"></i></a>
+          <h2 class="self-center mt-2 underline font-bold text-[#00BA4B]">Club Elo</h2>
+
+          <!-- 5000 is a placeholder -->
+          <h3 class="self-center text-[#593EFD]" id="ranking">5,000</h3>
+        </div>  
+      </section>
+
+      <!-- members -->
+      <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] "> 
+        <!-- members button -->
+        <div class="flex flex-col">
+          <button class="text-white bg-[#00BA4B] hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 font-medium rounded-full px-5 py-2.5">
+            <a href="club-members.html">
+              <h2>Members</h2>
+            </a>
+          </button>
+        </div>  
+      </section>
+
+      <!-- Share Section -->
+      <section class="profile-picture flex flex-wrap flex-grow justify-center bg-[#272522] "> 
+        <!-- Share Image -->
+        <div class="flex flex-col">
+          <button><a href="share-profile-club.html"><i class="fa-solid fa-arrow-up-from-bracket fa-2x text-[#00BA4B]"></i></a>
+            <h2 class="self-center mt-2 text-[#00BA4B]">Share</h2>
+          </button>
+        </div>  
+      </section>
+
+
+        <!-- Navigation Section -->
+      <nav class="navbar nav-lg">
+
+        <button class="nav-btn btn-hover">
+          <a href="rankings-indavidual.html"><i class="fas fa-chart-bar"></i></a>
+        </button>
+
+        <button class="nav-btn btn-hover">
+          <a href="homepage.html"><i class="fa-solid fa-house-chimney"></i></a>          
+        </button>
+
+        <button class="nav-btn btn-hover">
+          <a href="clubpage.html"><i class="fas fa-chess"></i></a>             
+        </button>
+
+        <button class="nav-btn btn-hover">
+          <a href="user-profile.html"><i class="fas fa-user"></i></a>            
+        </button>
+      </nav>
+
+    </main>
+  </body>
+</html>

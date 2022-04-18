@@ -1,0 +1,26 @@
+<body class="bg-[#272522]">
+
+    {{!-- <!-- Main Section --> --}}
+    <main class="min-h-screen min-w-screen flex flex-col gap-y-8">
+
+        <section class="flex gap-12 flex-col flex-wrap flex-grow justify-center items-center bg-[#272522] rounded-lg"> 
+            <div class="flex flex-col items-center gap-9 m-4">
+                {{!-- <!-- Home Page Image --> --}}
+                <h3 class="text-xl font-small text-5xl text-gray-900 dark:text-white">Chess Stats</h3>
+                <div class="Chess-icon">
+                    <a href=""><i class="fa-solid fa-chess-board fa-10x text-[#00BA4B]"></i></a>  
+                </div>
+            </div>
+        </section>
+        
+
+        {{!-- <!-- add member text --> --}}
+        <section class="profile-picture flex flex-col flex-wrap flex-grow justify-center items-center mt-8 bg-[#161719]"> 
+            <h1 class="text-5xl mb-12 underline text-[#00BA4B]">About</h1>
+            <p class="mx-12 text-2xl text-center">This Application was made for the purpose of tracking elo rankings and placements of indaviduals. This makes for easy viewing of indaviduals based on their scores/elo and can be easily shared via unique QR code found under the “Share profile” section of your account settings.</p>
+        </section>
+
+        {{> navbar }}
+
+    </main>
+</body>

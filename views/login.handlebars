@@ -1,0 +1,60 @@
+<body class="bg-[#272522]">
+
+    {{!-- Main Section --}}
+    <main class="min-h-screen min-w-screen flex flex-col justify-center">
+        {{!-- Logo --}}
+        {{!-- <img class="" src="./assets/images/" alt="" height="70" /> --}}
+
+        <section class="flex flex-wrap justify-center bg-[#272522]">
+
+            <div class="flex flex-col items-center gap-9 m-4">
+                {{!-- Home Page Image --}}
+                <h3 class="text-xl font-small text-gray-900 dark:text-white">Chess Stats</h3>
+                <div class="Chess-icon">
+                    <a href=""><i class="fa-solid fa-chess-board fa-8x text-tertiary"></i></a>
+                </div>
+
+                {{!-- Login page --}}
+                <div class="self-center mx-auto">
+                    <div
+                        class="bg-white border-gray-200 rounded-lg p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
+                        <form class="space-y-12" action="#" id="login-form">
+                            <div>
+                                <label for="email-login"
+                                    class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Your
+                                    email</label>
+                                <input type="email-login" name="email" id="email-login"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    placeholder="name@company.com" required="">
+                            </div>
+                            <div>
+                                <label for="password-login"
+                                    class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Your
+                                    password</label>
+                                <input type="password" name="password" id="password-login" placeholder="••••••••"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    required="">
+                            </div>
+                            <div class="">
+                                <div class="mb-8">
+                                    <button type="submit"
+                                        class="w-full text-white bg-[#00BA4B] hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Login
+                                        to your account</button>
+                                </div>
+
+                                <div>
+                                    {{!-- insert correct filepath to go to create new account /register --}}
+                                    <a href="">
+                                        <button
+                                            class="w-full text-white bg-[#00BA4B] hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Not
+                                            Registered? Create account</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="/js/login.js"></script>
+</body>
