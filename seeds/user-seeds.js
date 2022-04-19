@@ -10,8 +10,7 @@ const userdata = [
         wins: 200,
         losses: 0,
         elo: 420,
-        org_id: 3
-
+        org_id: 2
     },
     {
         username: "DatBoiBugz",
@@ -21,7 +20,7 @@ const userdata = [
         wins: 123,
         losses: 2,
         elo: 2149,
-        org_id: 3
+        org_id: 2
     },
     {
         username: "rpendred1",
@@ -31,7 +30,7 @@ const userdata = [
         wins: 19,
         losses: 53,
         elo: 1168,
-        org_id: 3
+        org_id: 2
     },
     {
         username: "rnutley2",
@@ -41,7 +40,7 @@ const userdata = [
         wins: 19,
         losses: 8,
         elo: 1617,
-        org_id: 2
+        org_id: 1
     }
 ];
 
