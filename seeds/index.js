@@ -13,6 +13,7 @@ const seedAll = async () => {
     await seedOrganizations();
     console.log('--------------');
     await seedUsers();
+    // await seedOrganizations();
     process.exit(0);
 };
 

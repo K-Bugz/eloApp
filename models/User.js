@@ -56,9 +56,9 @@ User.init(
         org_id: {
             type: DataTypes.INTEGER,
             // allowNull is default false FYI
-            allowNull: false,
+            allowNull: false, // they might not have to bee associated (try this)
             references: {
-                model: 'Organization',
+                model: 'organization', // I tried lowercase 
                 key: 'id',
                 foreignKey: true
             }
