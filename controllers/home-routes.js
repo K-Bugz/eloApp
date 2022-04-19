@@ -32,7 +32,6 @@ router.get('/', withAuth, (req, res) => {
 });
 
 
-
 // get single user stuff
 router.get('/user/:id', (req, res) => {
     User.findOne({
